@@ -2,7 +2,8 @@
 Other recipes use this one for common features.
 
 This recipe is designed to:
-- Set up typical modules.
+- Set up typical modules
+- Install Drush
 - Not have a specific theme (that's for downstream recipes).
 
 ## Documentation
@@ -23,6 +24,7 @@ lando composer require oomphinc/composer-installers-extender
 lando composer config allow-plugins.oomphinc/composer-installers-extender
 lando composer config extra.installer-types --merge --json '["drupal-recipe"]'
 lando composer config extra.installer-paths --merge --json '{"web/recipes/contrib/{$name}": ["type:drupal-recipe"]}'
+lando composer config minimum-stability dev
 ```
 
 - Allow patches and add the recipe patch to composer.json so that Drupal can work with recipes.
@@ -58,10 +60,15 @@ brew install gpatch
 ```
 
 - Apply the recipe. Note that `core/scripts/drupal` must be
-executable with `chmod +x`.
+executable with `chmod +x`:
+```
+  cd web
+  chmod +x core/scripts/drupal
+```
+
 
 ```shell
-php core/scripts/drupal recipe recipes/contrib/hd-base
+  php core/scripts/drupal recipe recipes/contrib/hd-recipe-base
 ```
 
 You should see:

@@ -1,10 +1,32 @@
 {
     "name": "performant-labs/hd-recipe-base",
+    "description": "Basic modules for new sites. Usually requires a downstrean recipe.",
+    "keywords": ["recipe"],
+    "type": "drupal-recipe",
     "authors": [
-        {
-            "name": "Andre Angelantoni",
-            "email": "aangel@performantlabs.com"
-        }
+      {
+        "name": "André Angelantoni",
+        "homepage": "https://performantlabs.com",
+        "role": "Maintainer"
+      }
     ],
-    "require": {}
-}
+    "repositories": [
+      {
+        "type": "vcs",
+        "url": "https://github.com/Performant-Labs/hd-recipe-base"
+      }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+      "drupal/core": "^10",
+      "drupal/pathauto": "^1.0",
+      "drupal/redirect": "^1.9",
+      "drupal/symfony_mailer": "^1.4",
+      "drupal/token": "^1.13",
+      "drupal/xmlsitemap": "^1.5",
+      "drush/drush": "^12",
+      "performant-labs/atk_demo_support": "dev-main"
+    },
+    "suggest": {},
+    "license": "GPL-2.0-or-later"
+  }
