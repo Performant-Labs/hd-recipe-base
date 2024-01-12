@@ -19,8 +19,6 @@ install:
   # The system will detect if it is a theme or a module. During the
   # install only simple configuration from the new modules is created.
   # This allows the Drupal recipe control over the configuration.
-  - admin_toolbar
-  - admin_toolbar_tools
   - pathauto
   - redirect
   - symfony_mailer
@@ -35,8 +33,12 @@ install:
   # to maintain or copy this configuration.
   #
   config:
-
-  # import:
+    import:
+      pathauto: '*'
+      redirect: '*'
+      symfony_mailer: '*'
+      token: '*'
+      xmlsitemap: '*'
 
   # Configuration actions may be defined. The structure here should be
   # configuration entity ID, action, and then action arguments. Below the user

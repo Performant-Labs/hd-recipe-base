@@ -1,0 +1,10 @@
+{
+    "name": "performant-labs/hd-recipe-base",
+    "authors": [
+        {
+            "name": "Andre Angelantoni",
+            "email": "aangel@performantlabs.com"
+        }
+    ],
+    "require": {}
+}
