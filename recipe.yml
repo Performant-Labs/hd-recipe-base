@@ -32,14 +32,14 @@ install:
   # provided by the modules it configures. This allows them to not have
   # to maintain or copy this configuration.
   #
-  config:
-    import:
-      pathauto: '*'
-      redirect:
-        - redirect.settings.yml
-      symfony_mailer: '*'
-      token: '*'
-      xmlsitemap: '*'
+config:
+  import:
+    pathauto: '*'
+    redirect:
+      - redirect.settings.yml
+    symfony_mailer: '*'
+    token: '*'
+    xmlsitemap: '*'
 
   # Configuration actions may be defined. The structure here should be
   # configuration entity ID, action, and then action arguments. Below the user
