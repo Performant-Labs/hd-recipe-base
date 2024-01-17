@@ -19,7 +19,7 @@ install:
   # The system will detect if it is a theme or a module. During the
   # install only simple configuration from the new modules is created.
   # This allows the Drupal recipe control over the configuration.
-  - pathauto
+  #- pathauto
   - redirect
   - symfony_mailer
   - token
