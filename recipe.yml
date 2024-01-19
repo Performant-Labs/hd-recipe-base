@@ -35,7 +35,7 @@ install:
 config:
   import:
     pathauto:
-      - pathauto.settings
+      - pathauto.settings.yml
     redirect:
       - redirect.settings.yml
     symfony_mailer: '*'
